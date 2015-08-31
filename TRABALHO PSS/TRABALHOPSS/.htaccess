@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+   RewriteEngine On
+
+	#força o uso de WWW na página
+	#RewriteCond %{HTTP_HOST} ^dominio\.com\.br
+	#RewriteRule ^ http://www.dominio.com.br%{REQUEST_URI} [L,R=301]
+
+	RewriteRule ^index/?$ 							/TRABALHOPSS/index.php 									[NC,L]
+	RewriteRule ^home/?$	 						/TRABALHOPSS/index.php 									[NC,L]
+	RewriteRule ^medico/?$	 						/TRABALHOPSS/visao/medico.php 							[NC,L]
+	RewriteRule ^([a-z_]+)/?$	 					/TRABALHOPSS/visao/$1.php	[NC,L]
+	
+	
+	
+</IfModule>
+
+RewriteEngine On
+RewriteBase /TRABALHOPSS/
+RewriteCond %{REQUEST_FILENAME} !-f  
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /TRABALHOPSS/index.php [L]
+
+
