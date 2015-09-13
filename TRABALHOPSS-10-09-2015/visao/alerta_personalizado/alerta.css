@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url("fontes_selecionadas/stylesheet.css");
+
+
+html {	height:100%;	}
+
+/* fundo preto */
+#modalContainer { background-color:#EEE;	position:absolute;	width:100%;	height:100%; top:0px; left:0px;	z-index:10000;  }
+ 
+ /* caixa */
+#alertBox {
+	position:relative;
+	width:300px;
+	min-height:100px;
+	top:50%;
+	margin-top:-80px;
+	border:1px solid #BEBEBE;
+	border-radius:5px;
+	overflow:hidden;
+	box-shadow:0px 8px 15px #BABABA;
+	background-color:#fff
+}
+
+#modalContainer > #alertBox {	position:fixed;	}
+ 
+#alertBox h1 {	
+	height:40px;
+	line-height:35px;
+	font-family: 'Swis721CnBTRoman';	
+	background-color:#DFDFDF;	
+	color:#7F7F7F;	
+	border-bottom:1px solid #BEBEBE;	
+	text-align:center;	
+	font-weight:normal;	
+	background-image:url(alert.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+ 
+#alertBox p {	font-family: 'Swis721CnBTRoman'; font-size:14px; background-color:#fff;	 height:50px;	padding:15px 10px 10px 10px;	margin:0px;	text-align:center; color:#7F7F7F; }
+ 
+ 
+/* botao fechar */
+#alertBox #closeBtn {
+	display:block;
+	position:relative;
+	margin:0px auto 10px 120px;
+	padding:0px;
+	border:1px solid #BEBEBE;
+	width:60px;
+	height:25px;
+	font-family: 'Swis721CnBTRoman';
+	font-size:15px;
+	line-height:25px;
+	text-transform:uppercase;
+	text-align:center;
+	color:#7F7F7F;
+	text-decoration:none;
+	
+background: #f0f9ff; /* Old browsers */
+background: -moz-linear-gradient(top,  #f0f9ff 26%, #a1dbff 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(26%,#f0f9ff), color-stop(100%,#a1dbff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f0f9ff 26%,#a1dbff 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f0f9ff 26%,#a1dbff 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f0f9ff 26%,#a1dbff 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f0f9ff 26%,#a1dbff 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
+}
+ 
+/* unrelated styles */
+ 
+#mContainer {
+	position:relative;
+	width:600px;
+	margin:auto;
+	padding:5px;
+	border-top:2px solid #000;
+	border-bottom:2px solid #000;
+	font:0.7em verdana,arial;
+}
+ 
+#modalContainer h1,h2 {
+	margin:0;
+	padding:4px;
+	font:bold 1.5em verdana;
+	border-bottom:1px solid #000;
+}
+ 
+code {
+	font-size:1.2em;
+	color:#069;
+}
+ 
+#credits {
+	position:relative;
+	margin:25px auto 0px auto;
+	width:350px; 
+	font:0.7em verdana;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+	height:90px;
+	padding-top:4px;
+}
+ 
+#credits img {
+	float:left;
+	margin:5px 10px 5px 0px;
+	border:1px solid #000000;
+	width:80px;
+	height:79px;
+}
+ 
+.important {
+	background-color:#F5FCC8;
+	padding:2px;
+}
+ 
+code span {
+	color:green;
+}
+
+
+

@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { 
+	background-color:#E9EAED;	
+	margin:0px; padding:0px; 
+	position: relative;
+}
+
+h1 , h2 {
+	background-color:#F6F7F8;	
+	margin:0px;
+	padding:10px;
+	color:#3B5998;
+	margin:auto -15px auto;
+	font-size:30px;
+}
+
+.container {
+	background-color:#fff;	
+	border:solid 1px #D3D6DB;
+	border-radius:10px;
+	margin-top:10px;
+	padding-bottom:15px;
+	overflow:hidden;
+}
+
+label, textarea, select	{	margin-top:20px;	}
+input[type="submit"]	{	margin-top:20px;	}
+input[type="radio"]		{	margin-left:20px;	}
+input[type="checkbox"]	{	margin-left:0px;	}
+
+
+
+#login	{	
+	max-width:320px; 
+	margin-top:50px; 
+}
